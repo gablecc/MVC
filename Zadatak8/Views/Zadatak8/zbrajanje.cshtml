@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "zbrajanje";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>zbrajanje</h1>
+
+<form action="~/Zadatak8/zbrajanje" method="post">
+
+    <input type="text" name="prvi" value="" class="form-control" /> <br />
+
+    <input type="text" name="drugi" value="" class="form-control" /> <br />
+
+    <input type="submit" name="name" value="Zbroji" class="btn btn-primary" /> <br />
+
+    Rezultat: @ViewBag.rezultat
+</form>

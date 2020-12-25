@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="~/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="~/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Izbornik</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Zadatak7/pocetna">Početna stranica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Zadatak7/oMeni">O meni</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Zadatak7/veleuciliste">Naziv ustanove</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+        <div>
+            @RenderBody()
+        </div>
+</body>
+</html>
